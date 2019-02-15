@@ -1,6 +1,11 @@
 body,html{
     background: #f9f9f9;
 }
+#box-wrapper,#wrapper{
+    width: 100%;
+    background: #f9f9f9;
+}
+
 .box{
     width: 765px;
     height: 513px;
