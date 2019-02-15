@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RegisterOne</title>
+    <link rel="stylesheet" type="text/css" href="css/registerOne.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+</head>
+
+<body>
+    <div class="box">
+        <div class="milogo">
+            <img src="images/milogo.png" />
+        </div>
+        <div class="title">注册小米账号</div>
+        <div class="country">
+            <p>国家/地区</p>
+            <div class="country_name"></div>
+            <div class="choose_name">
+                <ul></ul>
+            </div>
+            <div class="ps">成功注册账号后，国家/地区将不能被修改</div>
+        </div>
+        <form class="telephone" action="registerTwo.html" onsubmit="return false">
+            <label for="tel">手机号码</label>
+            <div class="inputtel">
+                <div class="quhao">
+                    <span>+967</span>
+                    <i></i>
+                </div>
+                <input type="text" id="tel" name = "telephone"  placeholder="请输入手机号码" />
+            </div>
+            <div class = "tip">
+                <ul></ul>
+                <span class=""></span>
+            </div>
+            <div class = "tip2">
+                    <ul></ul>
+                    <span class=""></span>
+                </div>
+            <button class= "btn" type = "submit" >立即注册</button>
+        </form>
+        <div class = "agree">
+            <i></i>
+            <em></em>
+            <span>注册账号即表示您同意并愿意遵守小米&nbsp;<a href="https://static.account.xiaomi.com/html/agreement/account/cn.html">用户协议</a>和&nbsp;<a href="https://www.mi.com/about/privacy/">隐私政策</a></span>
+        </div>
+    </div>
+
+    <div class = "footer">
+        <div class = "questions">
+            <a href="#">简体</a> |
+            <a href="#">繁体</a> |
+            <a href="#">English</a> |
+            <a href="#">常见问题</a>
+        </div>
+        <div class = "copyright">
+            <span>小米公司版权所有-京ICP备10046444-<a href = "#"><img src="images/ghs.png" />京公网安备11010802020134号</a>-京ICP证110507号</span>
+        </div>
+       
+    </div>
+</body>
+
+</html>
+
+<script src="js/registerOne.js"></script>
+<script>
+    registerOne.init()
+</script>

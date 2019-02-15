@@ -1,0 +1,86 @@
+body,html{
+    background: #f9f9f9;
+}
+.box{
+    width: 765px;
+    height: 480px;
+    background:white;
+    position: fixed;
+    top:20px;
+    left:50%;
+    transform: translate(-50%,0);
+}
+.milogo{
+    margin-top: 10px;
+    text-align:center;
+}
+.title{
+    font-size: 28px;
+    margin-top: 42px;
+    text-align: center;
+    color:#333333;
+}
+.account{
+    margin-top: 36px;
+    text-align: center;
+}
+
+.question,.num{
+    color:#000;
+}
+.num{
+    margin:10px 0;
+}
+.question{
+    margin:10px 0;
+}
+.yes{
+    line-height: 35px;
+    margin-top: 25px;
+    border:1px solid #e8e8e8;
+    width: 312px;
+    height: 38px;
+    cursor: pointer;
+    position: relative;
+    left: 30%;
+}
+.no{
+    line-height: 35px;
+    border:1px solid #e8e8e8;
+    width: 312px;
+    height: 38px;
+    cursor: pointer;
+    position: relative;
+    left: 30%;
+}
+.account a{
+    color:#7c7c7c;
+}
+
+.footer{
+    text-align: center;
+    margin-top:550px;
+}
+.footer a {
+    color:#757575;
+    cursor: pointer;
+    margin: 0 5px;
+}
+.footer a:nth-child(1) {
+    color:#000;
+}
+
+.footer a:hover {
+    color:#000;
+}
+.copyright {
+    margin-top: 12px;
+}
+.footer .copyright a{
+    color: #757575;
+    margin: 0 2px;
+}
+
+.copyright a:hover{
+    color: #757575;
+}
