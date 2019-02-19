@@ -1,0 +1,343 @@
+{
+    "data": [{
+            "id": 0,
+            "main": [{
+                        "i": "新品",
+                        "src": "images/xiaomi/img/mix3-320.png",
+                        "title": "小米MIX 3",
+                        "price": "3299元起"
+                    },
+                    {   
+                        "i": "",
+                        "src": "images/xiaomi/img/mix3-320.png",
+                        "title": "小米8 青春版",
+                        "price": "3299元起"
+                    },
+                    {   
+                        "i": "",
+                        "src": "images/xiaomi/img/mix3-320.png",
+                        "title": "小米8",
+                        "price": "3299元起"
+                    },
+                    {
+                        "i": "新品",
+                        "src": "images/xiaomi/img/mix3-320.png",
+                        "title": "小米play",
+                        "price": "3299元起"
+                    },
+                    {    
+                        "i": "",
+                        "src": "images/xiaomi/img/mix3-320.png",
+                        "title": "小米8 SE",
+                        "price": "3299元起"
+                    }
+                ]
+            },
+            {
+                "id": 1,
+                "main": [{
+                            "i": "新品",
+                            "src": "images/xiaomi/img/note7320-220.png",
+                            "title": "小米Note 7",
+                            "price": "999元起"
+                        },
+                        {   
+                            "i": "",
+                            "src": "images/xiaomi/img/mix3-320.png",
+                            "title": "小米8 青春版",
+                            "price": "3299元起"
+                        },
+                        {   
+                            "i": "",
+                            "src": "images/xiaomi/img/mix3-320.png",
+                            "title": "小米8",
+                            "price": "3299元起"
+                        },
+                        {
+                            "i": "新品",
+                            "src": "images/xiaomi/img/mix3-320.png",
+                            "title": "小米play",
+                            "price": "3299元起"
+                        },
+                        {    
+                            "i": "",
+                            "src": "images/xiaomi/img/mix3-320.png",
+                            "title": "小米8 SE",
+                            "price": "3299元起"
+                        }
+                    ]
+                },
+                {
+            "id": 2,
+            "main": [{
+                        "i": "新品",
+                        "src": "images/xiaomi/img/4s75.png",
+                        "title": "小米电视4S 75英寸",
+                        "price": "9999元起"
+                    },
+                    {   
+                        "i": "热卖",
+                        "src": "images/xiaomi/img/mix3-320.png",
+                        "title": "小米8 青春版",
+                        "price": "3299元起"
+                    },
+                    {   
+                        "i": "新品",
+                        "src": "images/xiaomi/img/mix3-320.png",
+                        "title": "小米8",
+                        "price": "3299元起"
+                    },
+                    {
+                        "i": "新品",
+                        "src": "images/xiaomi/img/mix3-320.png",
+                        "title": "小米play",
+                        "price": "3299元起"
+                    },
+                    {    
+                        "i": "",
+                        "src": "images/xiaomi/img/mix3-320.png",
+                        "title": "小米8 SE",
+                        "price": "3299元起"
+                    }
+                ]
+            },
+            {
+            "id": 3,
+            "main": [{
+                        "i": "新品",
+                        "src": "images/xiaomi/img/mix3-320.png",
+                        "title": "小米MIX 3",
+                        "price": "3299元起"
+                    },
+                    {   
+                        "i": "",
+                        "src": "images/xiaomi/img/mix3-320.png",
+                        "title": "小米8 青春版",
+                        "price": "3299元起"
+                    },
+                    {   
+                        "i": "",
+                        "src": "images/xiaomi/img/mix3-320.png",
+                        "title": "小米8",
+                        "price": "3299元起"
+                    },
+                    {
+                        "i": "新品",
+                        "src": "images/xiaomi/img/mix3-320.png",
+                        "title": "小米play",
+                        "price": "3299元起"
+                    },
+                    {    
+                        "i": "",
+                        "src": "images/xiaomi/img/mix3-320.png",
+                        "title": "小米8 SE",
+                        "price": "3299元起"
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "main": [{
+                            "i": "新品",
+                            "src": "images/xiaomi/img/mix3-320.png",
+                            "title": "小米MIX 3",
+                            "price": "3299元起"
+                        },
+                        {   
+                            "i": "",
+                            "src": "images/xiaomi/img/mix3-320.png",
+                            "title": "小米8 青春版",
+                            "price": "3299元起"
+                        },
+                        {   
+                            "i": "",
+                            "src": "images/xiaomi/img/mix3-320.png",
+                            "title": "小米8",
+                            "price": "3299元起"
+                        },
+                        {
+                            "i": "新品",
+                            "src": "images/xiaomi/img/mix3-320.png",
+                            "title": "小米play",
+                            "price": "3299元起"
+                        },
+                        {    
+                            "i": "",
+                            "src": "images/xiaomi/img/mix3-320.png",
+                            "title": "小米8 SE",
+                            "price": "3299元起"
+                        }
+                    ]
+                },
+                {
+                    "id": 5,
+                    "main": [{
+                                "i": "新品",
+                                "src": "images/xiaomi/img/mix3-320.png",
+                                "title": "小米MIX 3",
+                                "price": "3299元起"
+                            },
+                            {   
+                                "i": "",
+                                "src": "images/xiaomi/img/mix3-320.png",
+                                "title": "小米8 青春版",
+                                "price": "3299元起"
+                            },
+                            {   
+                                "i": "",
+                                "src": "images/xiaomi/img/mix3-320.png",
+                                "title": "小米8",
+                                "price": "3299元起"
+                            },
+                            {
+                                "i": "新品",
+                                "src": "images/xiaomi/img/mix3-320.png",
+                                "title": "小米play",
+                                "price": "3299元起"
+                            },
+                            {    
+                                "i": "",
+                                "src": "images/xiaomi/img/mix3-320.png",
+                                "title": "小米8 SE",
+                                "price": "3299元起"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 6,
+                        "main": [{
+                                    "i": "新品",
+                                    "src": "images/xiaomi/img/mix3-320.png",
+                                    "title": "小米MIX 3",
+                                    "price": "3299元起"
+                                },
+                                {   
+                                    "i": "",
+                                    "src": "images/xiaomi/img/mix3-320.png",
+                                    "title": "小米8 青春版",
+                                    "price": "3299元起"
+                                },
+                                {   
+                                    "i": "",
+                                    "src": "images/xiaomi/img/mix3-320.png",
+                                    "title": "小米8",
+                                    "price": "3299元起"
+                                },
+                                {
+                                    "i": "新品",
+                                    "src": "images/xiaomi/img/mix3-320.png",
+                                    "title": "小米play",
+                                    "price": "3299元起"
+                                },
+                                {    
+                                    "i": "",
+                                    "src": "images/xiaomi/img/mix3-320.png",
+                                    "title": "小米8 SE",
+                                    "price": "3299元起"
+                                }
+                            ]
+                        },
+                        {
+                            "id": 7,
+                            "main": [{
+                                        "i": "新品",
+                                        "src": "images/xiaomi/img/yuntai.jpg",
+                                        "title": "小米米家智能摄像机云台版",
+                                        "price": "3299元起"
+                                    },
+                                    {   
+                                        "i": "",
+                                        "src": "images/xiaomi/img/mix3-320.png",
+                                        "title": "小米8 青春版",
+                                        "price": "3299元起"
+                                    },
+                                    {   
+                                        "i": "",
+                                        "src": "images/xiaomi/img/mix3-320.png",
+                                        "title": "小米8",
+                                        "price": "3299元起"
+                                    },
+                                    {
+                                        "i": "新品",
+                                        "src": "images/xiaomi/img/mix3-320.png",
+                                        "title": "小米play",
+                                        "price": "3299元起"
+                                    },
+                                    {    
+                                        "i": "",
+                                        "src": "images/xiaomi/img/mix3-320.png",
+                                        "title": "小米8 SE",
+                                        "price": "3299元起"
+                                    }
+                                ]
+                            },
+                            {
+                                "id": 8,
+                                "main": [{
+                                            "i": "新品",
+                                            "src": "images/xiaomi/img/mix3-320.png",
+                                            "title": "小米MIX 3",
+                                            "price": "3299元起"
+                                        },
+                                        {   
+                                            "i": "",
+                                            "src": "images/xiaomi/img/mix3-320.png",
+                                            "title": "小米8 青春版",
+                                            "price": "3299元起"
+                                        },
+                                        {   
+                                            "i": "",
+                                            "src": "images/xiaomi/img/mix3-320.png",
+                                            "title": "小米8",
+                                            "price": "3299元起"
+                                        },
+                                        {
+                                            "i": "新品",
+                                            "src": "images/xiaomi/img/mix3-320.png",
+                                            "title": "小米play",
+                                            "price": "3299元起"
+                                        },
+                                        {    
+                                            "i": "",
+                                            "src": "images/xiaomi/img/mix3-320.png",
+                                            "title": "小米8 SE",
+                                            "price": "3299元起"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": 9,
+                                    "main": [{
+                                                "i": "新品",
+                                                "src": "images/xiaomi/img/mix3-320.png",
+                                                "title": "小米MIX 3",
+                                                "price": "3299元起"
+                                            },
+                                            {   
+                                                "i": "",
+                                                "src": "images/xiaomi/img/mix3-320.png",
+                                                "title": "小米8 青春版",
+                                                "price": "3299元起"
+                                            },
+                                            {   
+                                                "i": "",
+                                                "src": "images/xiaomi/img/mix3-320.png",
+                                                "title": "小米8",
+                                                "price": "3299元起"
+                                            },
+                                            {
+                                                "i": "新品",
+                                                "src": "images/xiaomi/img/mix3-320.png",
+                                                "title": "小米play",
+                                                "price": "3299元起"
+                                            },
+                                            {    
+                                                "i": "",
+                                                "src": "images/xiaomi/img/mix3-320.png",
+                                                "title": "小米8 SE",
+                                                "price": "3299元起"
+                                            }
+                                        ]
+                                    }                   
+    ]
+}
