@@ -143,27 +143,36 @@ var nav = (function(){
            })
         },
         insertData(data){
-            $('.nav-mean').empty();
+           $(".nav-mean").empty();
             var $ul = $('<ul></ul>')
             for (attr in data.data[num].main){
-                if(data.data[num].main[attr].i == ""){
-                    var $li = $(`<li>
-                    <div><a href="">
-                        <img class='border-right' src="${data.data[num].main[attr].src}">
-                        <p>${data.data[num].main[attr].title}</p></a>
-                    </div>
-                    <p>${data.data[num].main[attr].price}</p>
-                    </li>`)
+                var content = data.data[num].main[attr];
+                if(content.i == ""){
+                    var $li = $(`
+                        <li>
+                            <div>
+                                <a href="">
+                                    <img class='border-right' src="${content.src}" />
+                                    <p>${content.title}</p>
+                                </a>
+                            </div>
+                            <p>${content.price}</p>
+                        </li>
+                    `)
                     $ul.append($li);
                 }else{
-                    var $li = $(`<li>
-                    <i>${data.data[num].main[attr].i}</i>
-                    <div><a href="">
-                        <img class='border-right' src="${data.data[num].main[attr].src}">
-                        <p>${data.data[num].main[attr].title}</p></a>
-                    </div>
-                    <p>${data.data[num].main[attr].price}</p>
-                    </li>`)
+                    var $li = $(`
+                        <li>
+                            <i>${content.i}</i>
+                            <div>
+                                <a href="">
+                                    <img class='border-right' src="${content.src}">
+                                    <p>${content.title}</p>
+                                </a>
+                            </div>
+                            <p>${content.price}</p>
+                        </li>
+                        `)
                     $ul.append($li);
                 }
             }
@@ -173,12 +182,14 @@ var nav = (function(){
 }())
 
 
-var swiper = (function () {
+var bannerSwiper= (function () {
     var $tipBox = document.querySelector('#tip-box');
     var $tipAll = $tipBox.children;
     var $imgAll = document.querySelectorAll('#img-box li');
     var index = 0;
     var timer = null;
+    var $left = document.querySelector(".left");
+    var $right = document.querySelector(".right");
     for (let i = 0; i < $tipAll.length; i++) {
                 $tipAll[i].index = i;
             };
@@ -198,7 +209,18 @@ var swiper = (function () {
                     self.autoPlay( );
                 }
             }
-
+            $left.onclick = function(e) {
+                e = e || window.event;
+                index--;
+                self.showImage();
+                self.autoPlay();
+            }
+            $right.onclick = function(e) {
+                e = e || window.event;
+                index++;
+                self.showImage();
+                self.autoPlay();
+            }
         },
         showImage( ) {
             if(index > $tipAll.length - 1){

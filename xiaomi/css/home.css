@@ -1,0 +1,63 @@
+/* 网页banner */
+#banner-wrapper{
+    height: 460px;
+}
+.banner{
+    height: 460px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+}
+#img-box li{
+    position:absolute;
+    top: 0;
+    left: 0;
+}
+#img-box li a{
+    display: block;
+    height: 460px;
+    width: 1226px;
+}
+#img-box li a img{
+    height: 460px;
+    width: 1226px;
+}
+#tip-box{
+    position: absolute;
+    right:10px;
+    bottom:25px;
+}
+#tip-box li{
+    float: left;
+    height: 10px;
+    width: 10px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    background-color: black;
+    margin-right: 15px;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+}
+#tip-box .current{
+    background-color: #eee;
+}
+.left{
+    position: absolute;
+    height: 45px;
+    width: 28px;
+    left: 234px;
+    top: 207px;
+    background: url(../images/jt.png) 0 0;
+    border: 0;
+}
+.right{
+    position: absolute;
+    height: 45px;
+    width: 28px;
+    right: 0;
+    top: 207px;
+    background: url(../images/jt.png) -50px 0;
+    border: 0;
+}
