@@ -1,0 +1,83 @@
+/* 购物车头部 */
+#buy_car_wrapper{
+    border-bottom: 2px solid #ff6700;
+    background: #fff;
+    color: #b0b0b0;
+    height: 100px;
+}
+.container{
+    width: 1226px;
+    margin:0 auto;
+}
+
+#buy_car_wrapper .milogo{
+    float: left;
+    width:93px;
+    margin-top: 26px;
+    height: 48px;
+}
+
+.a_logo{
+    display: block;
+    text-indent:-9999px;
+    position: relative;
+    width: 48px;
+    height: 48px;
+    background-color: #ff6700;
+}
+.a_logo:before, .a_logo:after {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    transition: all .2s;
+}
+.a_logo:before {
+    background: url(../images/mi-logo.png) no-repeat;
+    opacity: 1;
+}
+.a_logo:after {
+    background: url(../images/mi-home.png) no-repeat;
+    opacity: 0;
+    margin-left: -55px;
+}
+.a_logo:hover:before{
+    opacity: 0;
+    transform: translate3d(55px, 0, 0);
+}
+.a_logo:hover:after{
+    opacity: 1;
+    transform: translate3d(55px, 0, 0);
+}
+
+.my_buy{
+    float: left;
+    margin-top:26px;
+    height:48px;
+}
+.my_buy h2{
+    float: left;
+    line-height: 48px;
+    font-size: 28px;
+    color: #424242;
+}
+.my_buy span{
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+.log_reg{
+    position: relative;
+    float: right;
+    margin-top:30px;
+    height: 40px;
+    line-height:40px;
+}
+.log_reg a{
+    color: #757575;
+    cursor: pointer;
+}

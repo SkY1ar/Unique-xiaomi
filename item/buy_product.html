@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购买商品</title>
+    <link rel="stylesheet" href="css/buy_product.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="swiper-4.4.6/dist/css/swiper.min.css">
+</head>
+
+<body>
+
+    <!-- 通用头部 -->
+    <div class = "header">
+
+    </div>
+
+    <!-- 此商品导航头部 -->
+    <div id="buy_product_wrapper">
+        <div class="buy_product_nav container clearfix">
+            <h2>小米8</h2>
+            <div class="buyP_nav clearfix">
+                <div class="buyP_nav_left">
+                    <span class="separator">|</span>
+                    <a href="#" target="_blank">小米8 透明探测版</a>
+                    <span class="separator">|</span>
+                    <a href="#" target="_blank">小米8 SE</a>
+                    <span class="separator">|</span>
+                    <a href="#" target="_blank">小米8 屏幕指纹版</a>
+                </div>
+                <div class="buyP_nav_right">
+                    <a href="#" target="_blank">概述</a>
+                    <span class="separator">|</span>
+                    <a href="#" target="_blank">图集</a>
+                    <span class="separator">|</span>
+                    <a href="#" target="_blank">参数</a>
+                    <span class="separator">|</span>
+                    <a href="#" target="_blank">F码通道</a>
+                    <span class="separator">|</span>
+                    <a href="#" target="_blank">用户评价</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 未登录提示 -->
+    <div id="login_notice_wrapper">
+        <div class="login_notice container">
+            <span>为方便您购买，请提前登录
+                <a href="login.html" target="_blank">立即登录</a>
+                <a href="#" class="close"><img src="images/close_03.jpg" /></a>
+            </span>
+        </div>
+    </div>
+
+    <!-- 商品主体部分 -->
+    <div id="product_main_wrapper">
+        <div class="product_main container clearfix">
+            <!-- 左侧轮播图 -->
+            <div class="buy_pro_left span1">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="images/pms_1.jpg" /></div>
+                        <div class="swiper-slide"><img src="images/pms_2.jpg" /></div>
+                        <div class="swiper-slide"><img src="images/pms_3.jpg" /></div>
+                        <div class="swiper-slide"><img src="images/pms_4.jpg" /></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+            <!-- 右侧产品介绍 -->
+            <div class="buy_pro_right span1">
+                <!-- 商品标题 -->
+                <h1>
+                    <span>小米8</span>
+                </h1>
+                <!-- 商品描述 -->
+                <p class="pro_descri"><span>「小米8 6GB+128GB 白色 领券再减200元，券后价2399元」「小米8 8GB+128GB
+                        领券再减200元，券后价2699元」</span>相机全新升级到世界前三的拍照体验 / 960帧超慢动作 / 手持超级夜景 / 全球首款双频GPS / 骁龙845处理器 / 红外人脸解锁 /
+                    AI变焦双摄 / 三星 AMOLED 屏</p>
+                <!-- 商品主体 -->
+                <div class="pro_main">
+                    <p class="xiaomi_self">小米自营</p>
+                    <p class="pro_price">2899元<span>3299元</span></p>
+                    <!-- 优惠券 -->
+                    <div class="coupon">
+                        <span class="coupon_paper">优惠券</span>
+                        <span class="coupon_mi8">小米8专属 200元优惠券</span>
+                        <a href="#" target="_blank">立即领取</a>
+                        <div class="gift">
+                            <span class="coupon_paper">赠品</span>
+                            <span class="coupon_mi8">赠米粉卡，最高含100元话费</span>
+                        </div>
+                    </div>
+                    <!-- 地址 -->
+                    <div class="address">
+                        <div class="user_address">
+                            <i><img src="images/addre_03.jpg" /></i>
+                            <div>
+                                <div class="addre_details">
+                                    <span>北京</span>
+                                    <span>北京市</span>
+                                    <span>东城区</span>
+                                    <span>永定门外街道</span>
+                                </div>
+                                <span class="change">修改</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 版本 -->
+                    <div class="version">
+                        <p class="version_title">选择版本</p>
+                        <ul class="version_list clearfix">
+                            <li class="version_choose active">
+                                <a href="#">
+                                    <span class="name">8GB+128GB 全网通</span>
+                                    <span class="price">2899元</span>
+                                </a>
+                            </li>
+                            <li class="version_choose">
+                                <a href="#">
+                                    <span class="name">6GB+128GB 移动4G+</span>
+                                    <span class="price">2499元</span>
+                                </a>
+                            </li>
+                            <li class="version_choose">
+                                <a href="#">
+                                    <span class="name">6GB+64GB 全网通</span>
+                                    <span class="price">2299元</span>
+                                </a>
+                            </li>
+                            <li class="version_choose">
+                                <a href="#">
+                                    <span class="name">6GB+128GB 全网通</span>
+                                    <span class="price">2599元</span>
+                                </a>
+                            </li>
+                            <li class="version_choose line_dashed">
+                                <a href="#">
+                                    <span class="name">6GB+256GB 全网通</span>
+                                    <span class="price">2899元</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 颜色 -->
+                    <div class="color">
+                        <p class="color_title">选择颜色</p>
+                        <ul class="color_list clearfix">
+                            <li class="color_choose active"><a href="#"><img src="images/black.png" />黑色</a></li>
+                            <li class="color_choose"><a href="#"><img src="images/blue.png" />蓝色</a></li>
+                            <li class="color_choose line_dashed"><a href="#"><img src="images/white.png" />白色</a></li>
+                            <li class="color_choose line_dashed"><a href="#"><img src="images/gold.png" />金色</a></li>
+                        </ul>
+                    </div>
+                    <!-- 意外保险 -->
+                    <div class="protect">
+                        <div class="protect_title">选择小米提供的意外保护<a href="#" target="_blank">了解意外保护 ></a></div>
+                        <ul>
+                            <li class="protect_service clearfix">
+                                <i class="service_choose">
+                                    <img src="images/protect_03.jpg">
+                                    <em>✔</em>
+                                </i>
+                                <img src="images/pro_img.jpg" class="pro_img" />
+                                <div class="protect_details">
+                                    <span class="all_year">全年意外保障服务</span>
+                                    <p class="destroy">手机意外摔落/进水/碾压等损坏</p>
+                                    <p class="agreement">
+                                        <i>
+                                            <img src="images/agree_pro_03.jpg">
+                                            <em>✔</em>
+                                        </i>
+                                        我已阅读
+                                        <a href="#">服务条款</a><span> | </span><a href="#">常见问题</a>
+                                    </p>
+                                    <span class="agreement_price">249元</span>
+                                </div>
+                            </li>
+                            <li class="protect_service protect_service2 clearfix">
+                                <i class="service_choose">
+                                    <img src="images/protect_03.jpg">
+                                    <em>✔</em>
+                                </i>
+                                <img src="images/pro_img.jpg" class="pro_img" />
+                                <div class="protect_details">
+                                    <span class="all_year">全年碎屏保障服务</span>
+                                    <p class="destroy">手机意外碎屏</p>
+                                    <p class="agreement">
+                                        <i>
+                                            <img src="images/agree_pro_03.jpg">
+                                            <em>✔</em>
+                                        </i>
+                                        我已阅读
+                                        <a href="#">服务条款</a><span> | </span><a href="#">常见问题</a>
+                                    </p>
+                                    <span class="agreement_price">129元</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 最终选择购买的产品价格 -->
+                    <div class="last_choose">
+                        <ul>
+                            <li class="xiaomi8_price">
+                                小米8 8GB+128GB 黑色
+                                <span>3299元</span>
+                                <i>2899元</i>
+                            </li>
+                            <li class="total_price">
+                                总计：2899元
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- 加入购物车 -->
+                    <ul class="add_to_car clearfix">
+                        <li class="add_car">
+                            <a href="#" class="add_pro">加入购物车</a>
+                        </li>
+                        <li class="like">
+                            <a href="#" class="like_pro">
+                                <img src="images/like_03.jpg" />
+                                喜欢
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- 政策方针 -->
+                    <div class="policy">
+                        <a href="#" title="小米自营">
+                            <img src="images/choose_sev_03.jpg">
+                            <i>小米自营</i>
+                        </a>
+                        <a href="#" title="小米发货">
+                            <img src="images/choose_sev_03.jpg">
+                            <i>小米发货</i>
+                        </a>
+                        <a href="#" title="7天无理由退货">
+                            <img src="images/choose_sev_03.jpg">
+                            <i>7天无理由退货</i>
+                        </a>
+                        <a href="#" title="运费说明">
+                            <img src="images/choose_sev_03.jpg">
+                            <i>运费说明</i>
+                        </a>
+                        <a href="#" title="售后服务政策">
+                            <img src="images/choose_sev_03.jpg">
+                            <i>售后服务政策</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="information">
+            <!-- 特别说明 -->
+            <div class="special container">
+                <h3>特别说明</h3>
+                <img src="images/special.jpg" />
+            </div>
+
+            <!-- 官方微信 -->
+            <div class="special container">
+                    <h3>官方微信</h3>
+                    <img src="images/mi_weixin.jpg" />
+                </div>
+
+            <!-- 价格说明 -->
+            <div class="special container">
+                    <h3>价格说明</h3>
+                    <img src="images/price_infor.jpeg" />
+                </div>
+
+    </div>
+    </div>
+
+
+    <!-- 通用底部 -->
+
+
+
+
+</body>
+
+</html>
+
+<script src="swiper-4.4.6/dist/js/swiper.min.js"></script>
+<script src = "js/jquery.js"></script>
+<script src="js/buy_product.js"></script>
+
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        effect: 'fade',
+        autoplay: true,
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+
+        },
+    });
+</script>

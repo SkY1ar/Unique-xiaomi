@@ -1,0 +1,195 @@
+body,html{
+    background: #f9f9f9;
+}
+.box{
+    height: 510px;
+    width: 800px;
+    background:white;
+    margin: 0 auto;
+}
+.milogo{
+    margin-top: 10px;
+    text-align:center;
+}
+.title{
+    font-size: 28px;
+    margin-top: 42px;
+    text-align: center;
+    color:#333333;
+}
+.country{
+    margin-top: 36px;
+    color:#000;
+    transform: translateX(30%);
+    height: 88px;
+}
+.country p{
+    margin-bottom: 9px;
+}
+.country .ps{
+    color:#666666;
+    position: relative;
+    top:44px;
+    left:-298px;
+}
+.country_name{
+    float: left;
+    border:1px solid #e8e8e8;
+    width:259px;
+    height: 36px;
+    border-right: 0;
+    cursor: pointer;
+}
+.choose_name{
+    float: left;
+    border:1px solid #e8e8e8;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+}
+.choose_name ul{
+    width:16px;
+    height:16px;
+    background: url(../images/icon_user.png) no-repeat;
+    position: relative;
+    left:10px;
+    top:10px;
+}
+.telephone{
+    margin-top: 24px;
+    color:#000;
+    transform: translateX(30%);
+}
+.inputtel{
+    margin-top: 8px;
+    overflow: hidden;
+}
+.quhao{
+    float: left;
+    border:1px solid #e8e8e8;
+    border-right:0;
+    width: 65px;
+    height: 36px;
+    cursor: pointer;
+    line-height: 36px;
+    font-size: 10px;
+}
+.telephone .quhao span{
+    float: left;
+    color:#666666;
+}
+.quhao i{
+    float:left;
+    width: 7px;
+    height: 4px;
+    position: relative;
+    left: 9px;
+    top:16px;
+    background: url(../images/xjt_03.jpg) no-repeat;
+}
+#tel{
+    float: left;
+    border:1px solid #e8e8e8;
+    width: 229px;
+    height: 38px;
+    padding:9px;
+    box-sizing:border-box;
+}
+.tip{
+    margin-top: 10px;
+    overflow: hidden;
+    display: none;
+}
+.tip ul{
+    float: left;
+    width: 14px;
+    height: 14px;
+    background: url(../images/icon01.jpg) no-repeat;
+    position: relative;
+    top: 4px;
+}
+.tip2{
+    margin-top: 10px;
+    overflow: hidden;
+    display:none;
+}
+.tip2 ul{
+    float: left;
+    width: 14px;
+    height: 14px;
+    background: url(../images/icon01.jpg) no-repeat;
+    position: relative;
+    top: 4px;
+}
+.telephone span{
+    float: left;
+    color:#ff6666;
+    margin-left:5px;
+}
+
+.telephone button{
+    color:#FFF;
+    text-align:center;
+    line-height: 35px;
+    margin-top: 20px;
+    background: #ff6700;
+    border:1px solid #ea8038;
+    width: 294px;
+    height: 35px;
+    cursor: pointer;
+}
+.btn:hover{
+    opacity: 0.7;
+}
+.agree{
+    cursor: pointer;
+    position: relative;
+    top:20px;
+    left:23%;
+}
+.agree i{
+    float: left;
+    background: url(../images/agree_03.jpg) no-repeat;
+    width: 18px;
+    height: 18px;
+    margin-right: 4px;
+}
+.agree em{
+    float: left;
+    background: url(../images/no_agree_03.jpg) no-repeat;
+    width: 18px;
+    height: 18px;
+    margin-right: 4px;
+    display: none;
+}
+.agree span a {
+    color:#000;
+    font-weight: 600;
+}
+.footer{
+    text-align: center;
+    margin-top:40px;
+}
+.footer a {
+    color:#757575;
+    cursor: pointer;
+    margin: 0 5px;
+}
+.footer a:nth-child(1) {
+    color:#000;
+}
+
+.footer a:hover {
+    color:#000;
+}
+.copyright {
+    margin-top: 12px;
+}
+.footer .copyright a{
+    color: #757575;
+    margin: 0 2px;
+}
+
+.copyright a:hover{
+    color: #757575;
+}

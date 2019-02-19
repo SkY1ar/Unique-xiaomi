@@ -1,0 +1,221 @@
+/* 网页头部 */
+.container{
+    width: 1130px;
+    margin:0 auto;
+}
+.logo{
+    width:200px;
+    height: 98px;
+    background: url(../images/mistore_logo.png) no-repeat;
+}
+.logo a {
+    display: block;
+    width:200px;
+    height: 98px;
+    text-indent:-9999px;
+}
+
+/* 网页主体 */
+#banner_wrapper{
+    background: url(../images/login_banner.jpg) no-repeat;
+    width: 100%;
+    height: 588px;
+    background-position: top center;
+}
+.banner_link {
+    display: block;
+    height: 588px;
+}
+
+.login{
+    background: #FFF;
+    width: 410px;
+    min-height: 524px;
+    position: relative;
+    left: 62%;
+    top: -560px;
+}
+.login_header{
+    color:#e0e0e0;
+    padding: 27px 0 24px;
+    height: 30px;
+}
+.login_header a{
+    color:#666;
+    font-size:24px;
+    height: 30px;
+    float:left;
+}
+.account_login{
+    margin-left:70px;
+}
+.login_header a:hover{
+    color:#f56600;
+}
+.line{
+    border:1px solid #e0e0e0;
+    height:24px;
+    margin:0 35px 0 42px;
+    float:left;
+    position: relative;
+    top:4px;
+}
+/* 账号登录 */
+.login_area{
+    display: block;
+}
+#login_main_form{
+    margin: 10px 36px 0 36px;
+}
+#login_account,#password{
+    float: left;
+    border:1px solid #e8e8e8;
+    width: 340px;
+    height: 42px;
+    padding:9px;
+    box-sizing:border-box;
+    margin: 10px 0 4px 0;
+}
+
+::-webkit-input-placeholder {
+    color:#999;
+    font-size: 16px;
+}
+.btn{
+    color:#FFF;
+    text-align:center;
+    line-height: 42px;
+    margin-top: 24px;
+    margin-bottom:14px;
+    background: #ff6700;
+    border:1px solid #ea8038;
+    width: 340px;
+    height: 42px;
+    cursor: pointer;
+}
+.other_login_ways a{
+    color:#999;
+}
+.other_login_ways .tel_login{
+    color:#ff6700;
+    float: left;
+}
+.choose_login{
+    float: right;
+}
+.login_now:hover{
+    color:#f56600;
+}
+.forget_pwd:hover{
+    color:#f56600;
+}
+
+.other_login_type{
+    width:340px;
+    position:absolute;
+    top:350px;
+    margin: 70px 36px 0 36px;
+}
+fieldset{
+    border: 0;
+}
+.other_type{
+    border-top:1px solid #bbb;
+}
+.other_type_txt{
+    color: #bbb;
+    margin: 0 auto;
+}
+.other_type_links{
+    margin: 20px 0 0 35px;
+}
+.icons_type{
+    margin:0 17px;
+    width:30px;
+    height: 30px;
+    display: inline-block;
+    border-radius: 50%;
+    cursor: pointer; 
+}
+.btn-qq{
+    background-color: #0288d1;
+}
+.btn-weibo{
+    background-color: #d32f2f;
+}
+.btn-zhifubao{
+    background-color:#0ae;
+}
+.btn-weixin{
+    background-color: #00d20d;
+}
+.icons_type .btn_icontype {
+    display: block;
+    margin:6px auto 0;
+}
+.btn_icontype{
+    background: url(../images/icons_type.png) no-repeat;
+   vertical-align: middle;
+}
+.qq_link{
+   background-position: -21px -2px;
+   width:14px;
+   height:15px;
+}
+.weibo_link{
+   background-position: -38px -2px;
+   width:18px;
+   height:15px;
+ }
+.zhifubao_link{
+    background-position: -57px 0px;
+    width:26px;
+    height:18px;
+ }
+.weixin_link{
+    background-position: -84px 0px;
+    width:23px;
+    height:18px;
+ }
+/* 扫码登录 */
+ .code_login{
+     text-align: center;
+     margin-top:80px;
+     display: none;
+ }
+ .xiaomi_app{
+     margin-top:20px;
+ }
+.xiaomi_app span{
+    color:#f56600;
+}
+
+/* 网页底部 */
+.footer{
+    text-align: center;
+    margin-top:90px;
+}
+.footer a {
+    color:#757575;
+    cursor: pointer;
+    margin: 0 5px;
+}
+.footer a:nth-child(1) {
+    color:#000;
+}
+
+.footer a:hover {
+    color:#000;
+}
+.copyright {
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+.footer .copyright a{
+    color: #757575;
+    margin: 0 2px;
+}
+.copyright a:hover{
+    color: #757575;
+}
+
