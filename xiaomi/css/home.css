@@ -61,3 +61,527 @@
     background: url(../images/jt.png) -50px 0;
     border: 0;
 }
+
+/* banner轮播图下面选购手机 */
+#banner_down_wrapper{
+    margin-top:14px;
+    position: relative;
+}
+
+.ih_left{
+    width: 234px;
+    float: left;
+}
+.ih_left ul{
+    padding: 3px;
+    font-size: 12px;
+    text-align: center;
+    background: #5f5750;
+}
+.ih_left ul li{
+    position: relative;
+    float: left;
+    width: 66px;
+    height: 82px;
+    padding:5px;
+    box-sizing: border-box;
+    margin:5px;
+}
+
+.ih_left ul li:hover p{
+    color:#FFF;
+}
+.top_line{
+    border-top:1px solid #757575;
+}
+.ih_left ul li a {
+    color:rgba(255,255,255,0.7);
+    display: block;
+    padding-top: 16px;
+}
+.ih_left ul li a img{
+    width:25px;
+    height: 25px;
+}
+.span1{
+    display:inline-block;
+    border-right:1px solid #757575;
+    height:70px;
+    position: relative;
+    left:36px;
+    top:-50px;
+}
+.span2{
+    display:inline-block;
+    border-right:1px solid #757575;
+    height:70px;
+    position: relative;
+    left:37px;
+    top:-52px;
+}
+.span4{
+    display:inline-block;
+    border-right:1px solid #757575;
+    height:70px;
+    position: relative;
+    left:36px;
+    top:-62px;
+}
+.span5{
+    display:inline-block;
+    border-right:1px solid #757575;
+    height:70px;
+    position: relative;
+    left:37px;
+    top:-62px;
+}
+
+.ih_right{
+    float:left;
+    width: 978px;
+    margin-left: 14px;
+}
+.ih_right ul li{
+    float:left;
+    width: 316px;
+    height: 189px;
+}
+
+.ih_right_02{
+    margin-left: 15px;
+}
+.ih_right ul li a{
+    display: block;
+    height: 189px;
+}
+
+.ih_right ul li a img{
+    width: 316px;
+    height: 189px;
+}
+.ih_right ul li:hover{
+    box-shadow: 0px 5px 35px rgba(0,0,0,0.15);
+    transition: box-shadow .2s linear;
+}
+
+.ih_bottom{
+    height: 120px;
+    position: absolute;
+    top:215px;
+}
+.ih_bottom a img{
+    width:1226px;
+ }
+
+ /* 主页主体内容部分 */
+ #home_main_wrapper{
+     background: #f5f5f5;
+     padding-top: 22px;
+     margin-top:180px;
+ }
+ /* 手机 */
+ #phones{
+    height: 686px;
+    margin-bottom: 8px;
+ }
+ .phones_header{
+     height:58px;
+     position: relative;
+ }
+ .phones_header h2{
+    font-size:22px;
+    line-height:58px;
+    color:#333;
+}
+.phones_header .ph_right{
+    position:absolute;
+    top:0;
+    right:0;
+}
+.phones_header .ph_right a{
+    color:#424242;
+    font-size:16px;
+    line-height: 58px;
+}
+.phones_header .ph_right a img{
+    position: relative;
+    top:4px;
+    margin-left:3px;
+}
+.phones_header .ph_right a:hover{
+    color:#ff6700;
+}
+.phones_info_left{
+    width: 234px;
+    float: left;
+    height: 614px;
+    z-index: 1;
+    margin-bottom: 14px;
+    background: #fff;
+    transition: all .2s linear;
+}
+.phones_info_left:hover{
+    z-index: 2;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    transform: translate3d(0, -2px, 0)
+}
+.phones_info_left:hover{
+    transition: all .2s linear;
+}
+.phones_info_left a{
+    width: 100%;
+    height: 100px;
+    display: block;
+    cursor: pointer;
+}
+.phones_info_left a img{
+    height: 614px;
+    width: 234px;
+}
+
+.phones_info_right{
+    width: 978px;
+    float: left;
+    margin-left: 14px;
+}
+
+.phones_info_right ul{
+    width: 992px;
+    margin: 0 0 -14px -14px;
+    height: 614px;
+}
+
+.phones_info_right ul li{
+   float:left;
+   width: 234px;
+   height: 260px;
+   margin:0 0 14px 14px;
+   position: relative;
+   z-index: 1;
+   background:#FFF;
+   padding:20px 0;
+   transition: all .2s linear;
+}
+.phones_info_right ul li:hover{
+    z-index: 2;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    transform: translate3d(0, -2px, 0)
+}
+.phones_info_right ul li:hover{
+    transition: all .2s linear;
+}
+
+.pic{
+    width:160px;
+    height:160px;
+    margin: 0 auto 18px;
+}
+.pic a{
+    display: block;
+    font-size:14px;
+}
+.pic a img{
+    width:160px;
+    height:160px;
+}
+.pic_title{
+    margin: 0 10px 2px;
+    color:#333;
+    text-align: center;
+    z-index: 6;
+    font-size:14px;
+    margin-bottom:4px;
+    cursor: pointer;
+}
+.pic_detail{
+    margin: 0 10px 10px;
+    height: 18px;
+    font-size:12px;
+    text-align: center;
+    color:#b0b0b0;
+}
+.pic_price{
+    margin: 0 10px 14px;
+    text-align: center;
+    font-size:14px;
+}
+.pic_price_a{
+    color:#ff6700;
+}
+.pic_price_b{
+    color:#b0b0b0;
+    text-decoration: line-through;
+}
+.pic_flag{
+    background: #83c44e;
+    position: absolute;
+    z-index: 5;
+    top:0;
+    left:50%;
+    width: 64px;
+    height: 20px;
+    font-size:12px;
+    text-align: center;
+    line-height: 20px;
+    color:#FFF;
+    margin-left:-32px;
+}
+.pic_cheap{
+    background:  #e53935;
+    position: absolute;
+    z-index: 5;
+    top:0;
+    left:50%;
+    width: 64px;
+    height: 20px;
+    font-size:12px;
+    text-align: center;
+    line-height: 20px;
+    color:#FFF;
+    margin-left:-32px;
+}
+
+/* 小米电视特惠 */
+#xiaomi_TV_cheap{
+    height: 120px;
+    margin: 28px 0 22px;
+}
+#xiaomi_TV_cheap a img{
+    width:1226px;
+ }
+
+ /* 家电 */
+
+ #electric{
+    height: 686px;
+    margin-bottom: 8px;
+ }
+ .electric_header{
+     height:58px;
+     position: relative;
+ }
+ .electric_header h2{
+    font-size:22px;
+    line-height:58px;
+    color:#333;
+}
+.electric_header .ph_right{
+    position:absolute;
+    top:0;
+    right:0;
+}
+.ph_right ul{
+   padding: 16px 0 0;
+}
+.ph_right ul li{
+    float: left;
+    margin:5px;
+}
+
+.ph_right ul li a{
+    cursor: pointer;
+    color:#333;
+}
+.ph_right ul li .active_title{
+    color:#ff6700;
+    padding-bottom:2px;
+    border-bottom:2px solid #ff6700;
+}
+
+.electric_info_left{
+    width: 234px;
+    float: left;
+    height: 614px;
+    margin-bottom: 14px;
+}
+.info_left_box{
+    width: 234px;
+    height: 614px;
+    margin-bottom: 14px;
+}
+.info_left_box ul {
+    height: 614px;
+}
+.info_left_box ul li{
+    height: 300px;
+    width: 234px;
+    margin-bottom: 14px;
+    background: #fff;
+    transition: all .2s linear;
+}
+.info_left_box ul li:hover{
+    z-index: 2;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    transform: translate3d(0, -2px, 0)
+}
+.info_left_box ul li:hover{
+    transition: all .2s linear;
+}
+
+.info_left_box ul li a{
+   display: block;
+   width: 100%;
+   height: 100%;
+}
+.info_left_box ul li a img{
+    width: 234px;
+    height: 300px;
+ }
+
+.electric_info_left a{
+    width: 100%;
+    height: 100px;
+    display: block;
+    cursor: pointer;
+}
+.electric_info_left a img{
+    height: 614px;
+    width: 234px;
+}
+
+.electric_info_right{
+    width: 978px;
+    float: left;
+    margin-left: 14px;
+    position: relative;
+}
+
+.electric_info_right .ul_list{
+    width: 992px;
+    margin: 0 0 -14px -14px;
+    height: 614px;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.electric_info_right .active{
+    display: block;
+}
+.electric_info_right ul li{
+   float:left;
+   width: 234px;
+   height: 260px;
+   margin:0 0 14px 14px;
+   position: relative;
+   z-index: 1;
+   background:#FFF;
+   padding:20px 0;
+   transition: all .2s linear;
+   overflow: hidden;
+}
+.electric_info_right ul li:hover{
+    z-index: 2;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    transform: translate3d(0, -2px, 0)
+}
+.electric_info_right ul li:hover{
+    transition: all .2s linear;
+}
+
+.pic{
+    width:160px;
+    height:160px;
+    margin: 0 auto 18px;
+}
+.pic a{
+    display: block;
+    font-size:14px;
+}
+.pic a img{
+    width:160px;
+    height:160px;
+}
+.pic_title{
+    margin: 0 10px 2px;
+    color:#333;
+    text-align: center;
+    z-index: 6;
+    font-size:14px;
+    margin-bottom:4px;
+    cursor: pointer;
+}
+.pic_detail{
+    margin: 0 10px 10px;
+    height: 18px;
+    font-size:12px;
+    text-align: center;
+    color:#b0b0b0;
+}
+.pic_price{
+    margin: 0 10px 14px;
+    text-align: center;
+    font-size:14px;
+}
+.pic_price_a{
+    color:#ff6700;
+}
+.pic_price_b{
+    color:#b0b0b0;
+    text-decoration: line-through;
+}
+.pic_flag{
+    background: #83c44e;
+    position: absolute;
+    z-index: 5;
+    top:0;
+    left:50%;
+    width: 64px;
+    height: 20px;
+    font-size:12px;
+    text-align: center;
+    line-height: 20px;
+    color:#FFF;
+    margin-left:-32px;
+}
+.pic_cheap{
+    background:  #e53935;
+    position: absolute;
+    z-index: 5;
+    top:0;
+    left:50%;
+    width: 64px;
+    height: 20px;
+    font-size:12px;
+    text-align: center;
+    line-height: 20px;
+    color:#FFF;
+    margin-left:-32px;
+}
+
+.hide_info{
+    display: block;
+    position: absolute;
+    left:0;
+    bottom:-90px;
+    opacity: 0;
+    background: #ff6700;
+    width: 234px;
+    height: 90px;
+    z-index:10;
+    transition: all .3s linear;
+    padding:8px 30px;
+    box-sizing: border-box;
+    font-size:12px;
+    color:rgba(255,255,255,0.9);
+}
+.electric_info_right ul li:hover .hide_info{
+    bottom:0;
+    opacity: 1;
+}
+.hide_info_a{
+    display: block;
+    margin-bottom:5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 10px 0 15px;
+}
+
+/* 争做优等生 */
+#good_pro{
+    height: 120px;
+    margin: 28px 0 22px;
+}
+#good_pro a img{
+    width:1226px;
+ }
