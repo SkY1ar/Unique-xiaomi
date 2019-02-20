@@ -102,6 +102,19 @@ var nav = (function(){
         },
         event(){
             const _this = this;
+            $(document).ready(function () {
+                $('.header-nav .show').hover(function () {
+                    $(".header-nav-mean").show( );
+                }, function () {
+                    $(".header-nav-mean").hide( );
+                });
+
+                $(".header-nav-mean").hover(function () {
+                    $(this).show( );
+                }, function () {
+                    $(this).hide();
+                });
+            })
             $('.header-nav .leave li').on('mouseenter',function(){
                 var flag = true
                 $(this).siblings().each(function(){
@@ -173,7 +186,7 @@ var nav = (function(){
 }())
 
 
-var swiper = (function () {
+var bannerSwiper = (function () {
     var $tipBox = document.querySelector('#tip-box');
     var $tipAll = $tipBox.children;
     var $imgAll = document.querySelectorAll('#img-box li');

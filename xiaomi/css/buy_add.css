@@ -1,0 +1,99 @@
+.header{
+    height: 140px;
+}
+.nav-title{
+    display: block;
+    padding: 38px 0 38px;
+    text-align: right;
+    color: #333;
+}
+.banner-nav .banner-nav-mean{
+    border: 1px solid #ff6700;
+}
+
+.banner-nav .banner-nav-mean .mean-title{
+    background-color: #fff;
+    color: #000;
+}
+.banner-nav .banner-nav-mean .mean-title a{
+    color: #000;
+}
+.nav-title i{
+    font-size: 16px;
+}
+
+
+/* 网页主体 */
+#buy-main-wrapper{
+    background: #f5f5f5;
+    padding: 38px 0;
+}
+.buy-succ{
+    margin-bottom: 26px;
+    padding: 0 0 28px 0;
+    height: 68px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.product-info{
+    float: left;
+}
+
+.product-info h3{
+    color: #424242;
+    font-size: 24px;
+    font-weight: normal;
+    margin-top: 3px;
+    margin-left: 15px;
+}
+.product-info .mesg{
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 14px;
+    color: #757575;
+}
+.btn-box{
+    float: right;
+}
+.btn-box .back{
+    width: 180px;
+    margin-left: 12px;
+    margin-top: 5px;
+    display: inline-block;
+    width: 158px;
+    height: 38px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #b0b0b0;
+    font-size: 14px;
+    line-height: 38px;
+    text-align: center;
+    color: #b0b0b0;
+    cursor: pointer;
+}
+.btn-box .go-car{
+    width: 180px;
+    margin-left: 12px;
+    margin-top: 5px;
+    display: inline-block;
+    width: 158px;
+    height: 38px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #b0b0b0;
+    font-size: 14px;
+    line-height: 38px;
+    text-align: center;
+    background: #ff6700;
+    border-color: #ff6700;
+    color: #fff;
+}
+.order-img{
+    float: left;
+    width: 64px;
+    height: 64px;
+}
+.order-img img{
+    width: 64px;
+    height: 64px;
+    border: 0;
+}
