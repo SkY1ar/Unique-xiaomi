@@ -1,6 +1,26 @@
 .header{
     height: 140px;
 }
+.nav-title{
+    display: block;
+    padding: 38px 0 38px;
+    text-align: right;
+    color: #333;
+}
+.banner-nav .banner-nav-mean{
+    border: 1px solid #ff6700;
+}
+
+.banner-nav .banner-nav-mean .mean-title{
+    background-color: #fff;
+    color: #000;
+}
+.banner-nav .banner-nav-mean .mean-title a{
+    color: #000;
+}
+.nav-title i{
+    font-size: 16px;
+}
 /* 此商品导航头部 */
 #buy_product_wrapper{
     height: 63px;
@@ -226,14 +246,10 @@
 .version_choose.active a{
     color: #ff6700;
 }
-.version_choose a{
-    padding: 0 27px;
-    display: block;
-    color: #333;
-}
 .version_choose .name{
     display: inline-block;
     width:170px;
+    margin-left: 30px;
 }
 .version_choose .price{
     color:#b0b0b0;

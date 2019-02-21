@@ -37,6 +37,45 @@
     padding-left: 18px;
 }
 
+.car_menu {
+    display: none;
+    position: absolute;
+    right: 60px;
+    top: 40px;
+    z-index: 5;
+    width: 316px;
+    height: 98px;
+    line-height: 98px;
+    text-align: center;
+    font-size: 12px;
+    color: #424242;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.top .shop-car:hover {
+    background: #FFF;
+}
+
+.top .shop-car:hover {
+    background: #FFF;
+    color: #ff6700;
+}
+
+.top .shop-car:hover a {
+    color: #ff6700;
+    background: #FFF;
+}
+
+.top .shop-car:hover .icon-gwc:before {
+    content: "\e6b8";
+    color: #ff6700;
+}
+
+.top .shop-car:hover .car_menu {
+    display: block;
+}
+
 .top a {
     font-size: 10px;
     color: #b0b0b0;
