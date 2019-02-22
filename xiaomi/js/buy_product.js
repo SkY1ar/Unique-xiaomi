@@ -291,7 +291,7 @@ var shop = (function(){
                const _this = this;
                $btn.onclick = function(e){
                       _this.getData( );
-                      
+                      console.log(1)
                   }
                },
             getData(){
@@ -315,7 +315,8 @@ var shop = (function(){
             setShoplist(data){
                 console.log(data)
                 var xiaomilist = localStorage.xiaomilist || '[]';
-                xiaomilist = JSON.parse(xiaomilist);
+                xiaomilist = JSON.parse(xiaomilist)
+                console.log(xiaomilist.length)
                 for(var i = 0;i < xiaomilist.length;i++){
                     if(xiaomilist[i].name == data.name && xiaomilist[i].color == data.color && xiaomilist[i].version == data.version){
                        xiaomilist[i].count += data.count;
@@ -329,6 +330,9 @@ var shop = (function(){
             }
         }
    }())
+   
+
+
 
 var cookie = (function(){
     var $info = document.querySelector('.mesg');

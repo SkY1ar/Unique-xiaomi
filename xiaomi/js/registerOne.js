@@ -5,12 +5,13 @@ var registerOne = (function () {
     var $no_agree = document.querySelector(".agree em");
     var $tip2 = document.querySelector(".tip2");
     var $span2 = document.querySelector(".tip2 span");
+    var $form = document.querySelector('form');
     return {
         init() {
             this.event();
         },
          event() {
-
+            var _this = this;
             $tel.onblur = function () {
                 var $tip = document.querySelector(".tip");
                 var $span = document.querySelector(".tip span");
@@ -44,10 +45,23 @@ var registerOne = (function () {
             }
             $btn.addEventListener("click", function() {
                 var reg = /^1\d{10}$/;
-                if(reg.test($tel.value)) {
-                    alert("验证成功");
-                    location.href = 'registerTwo.html';
-                }
+                _this.getRom( );
+                sendAjax('php/test.php', {
+                    type: 'POST',
+                    data: {
+                        username:  $form['telephone'].value
+                    },
+                    success(data) {
+                        console.log(data);
+                        let { code, msg } = JSON.parse(data);
+                        if (code == "200") {
+                            alert(msg);
+                        } else if(reg.test($tel.value)){
+                            alert("验证成功");
+                            location.href = 'registerTwo.html';
+                        }
+                    }
+                })
             },false)
 
             $btn.addEventListener("click", function() {
@@ -60,6 +74,31 @@ var registerOne = (function () {
                     return;
                 }  
             },false)
+        },
+        getRom( ){
+            var obj = {};
+            obj.phone = $tel.value;
+            var str = '';
+            for(var i = 0;i < 4;i++){
+                var num = Math.floor(Math.random()*10)
+                str += num
+            }
+            obj.code = str;
+            this.setData(obj)
+        },
+        setData(data){
+            var register = localStorage.register || '[]';
+            register = JSON.parse(register)
+            for(var i = 0;i < register.length;i++){
+                if(register[i].phone == data.phone ){
+                   register[i].code = data.code;
+                    break
+                }
+            }
+            if(i == register.length){
+               register.push(data);
+            }
+            localStorage.register = JSON.stringify(register);
         }
     }
 }())
@@ -67,6 +106,17 @@ var registerOne = (function () {
 
 
 
+var yanzheng = (function(){
+    var $btn = document.querySelector('.btn')
+    return {
+        init(){
+            this.event()
+        },
+        event(){
+            $btn.on
+        }
+    }
+}())
 
 
 

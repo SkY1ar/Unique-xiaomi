@@ -11,6 +11,7 @@ var shopCar = (function(){
                  e = e || window.event;
                  var target = e.target || e.srcElement;
                  if(target.nodeName === 'BUTTON'){
+                    console.log(1)
                       var index = target.parentNode.parentNode.getAttribute('index');
                       _this.data.splice(index,1);
                       _this.insertData(_this.data);
@@ -21,6 +22,7 @@ var shopCar = (function(){
             e = e || window.event;
             var target = e.target || e.srcElement;
             if(target.nodeName === 'INPUT'){
+                console.log(1)
                 var index = target.parentNode.getAttribute('index');
                 _this.data[index].count = target.value;
                 _this.insertData(_this.data);

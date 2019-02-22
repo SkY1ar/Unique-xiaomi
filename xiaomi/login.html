@@ -35,7 +35,7 @@
             </div>
             <!-- 帐号登录 -->
             <div class="login_area">
-                <form action="#" id="login_main_form">
+                <form action="#" id="login_main_form" onsubmit="return false">
                     <input type="text" id="login_account" name="login_account" placeholder="邮箱/手机号码/小米ID" /><br />
                     <input id="password" name="password" type="password" placeholder="密码" /><br />
                     <button class="btn" type="submit">登录</button>
@@ -89,6 +89,37 @@
         </div>
     </div>
     <!-- 底部结束 -->
+
+
+
+    <script src="js/ajax.js"></script>
+    <script>
+        var $btn = document.querySelector('.btn');
+        var $form = document.querySelector('form');
+        $btn.onclick = function (e) {
+            e = e || window.event;
+            // e.preventDefault() ? e.preventDefault() : e.returnValue = false;
+            console.log($form['login_account'].value)
+            console.log($form['password'].value)
+            sendAjax('php/login.php', {
+                type: 'POST',
+                data: {
+                    username: $form['login_account'].value,
+                    psd: $form['password'].value
+                },
+                success(data) {
+                    console.log(data);
+                    let { code, msg, _data } = JSON.parse(data);
+                    if (code == "200") {
+                        localStorage.data = JSON.stringify(_data);
+                        location.href = 'xiaomi.html';
+                    } else {
+                        alert(msg)
+                    }
+                }
+            })
+        }
+    </script>
 </body>
 
 </html>

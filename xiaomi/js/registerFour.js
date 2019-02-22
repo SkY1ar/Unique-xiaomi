@@ -3,12 +3,15 @@ var registerFour = (function () {
     var $password = document.querySelector("#password");
     var $rePassword = document.querySelector("#rePassword");
     var $iAll = document.querySelectorAll("i");
-    
+    var $tel = document.querySelector('.tel span');
+    var $form = document.querySelector('form');
     return {
         init() {
             this.event();
+            this.getData();
         },
          event() {
+             var _this = this;
             $password.onblur = function () {
                 var $tip = document.querySelector(".tip");
                 var $ul = document.querySelector(".tip ul");
@@ -57,16 +60,38 @@ var registerFour = (function () {
                     $rePassword.style.border = "1px solid #e8e8e8";
                 }
             }
-
-            $btn.onclick = function () {
-                for (let j = 0; j < $iAll.length; j++) {
-                    if ($iAll[j].className != "bg-success") {
-                        $password.focus();
-                        return;
+            $btn.onclick = function (e) {
+                e = e || window.event;
+                e.preventDefault() ? e.preventDefault() : e.returnValue = false;
+                sendAjax('php/register.php', {
+                    type: 'POST',
+                    data: {
+                        username: _this.data.phone,
+                        psd: $form['password'].value
+                    },
+                    success(data) {
+                        console.log(data);
+                        let { code, msg } = JSON.parse(data);
+                        if (code == "200") {
+                            alert(msg);
+                            location.href = 'login.html';
+                        } else {
+                            alert(msg)
+                        }
                     }
-                }
-                alert("小米账号注册成功");
+                })
             }
+        },
+        getData(){
+            var register = localStorage.register || '[]';
+            register = JSON.parse(register);
+            var obj=register.pop()
+            this.insertData(obj);
+         },
+         insertData(data){
+            console.log(data.code)
+            this.data = data;
+            $tel.innerHTML = data.phone;
         }
     }
 }())
