@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/iconfont.css" />
     <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" href="swiper-4.4.6/dist/css/swiper.min.css">
     <style>
     </style>
 </head>
@@ -44,7 +45,7 @@
                 <a href="">Select Region</a>
             </div>
             <div class="shop-car">
-                <a href="">
+                <a href="buy_car.html">
                     <i class="iconfont icon-gwc"></i>
                     购物车
                     <span>(0)</span>
@@ -57,9 +58,9 @@
                 <i>购物车中还没有商品，赶紧选购吧！</i>
             </div>
             <div class="info">
-                <a href="">登录</a>
+                <a href="login.html">登录</a>
                 <span>|</span>
-                <a href="">注册</a>
+                <a href="registerOne.html">注册</a>
                 <span>|</span>
                 <a href="">消息通知</a>
             </div>
@@ -114,10 +115,10 @@
                 </ul>
             </div>
             <div class="seacher">
-                <form>
+                <form onsubmit="return false">
                     <input type="text" class="seacher-txt" />
                     <!-- <input type="submit" class="seacher-sub " value=" " /> -->
-                    <button type="submit" class="seacher-sub"><i class="iconfont icon-sousuo"></i></button>
+                    <button id = "sub" type="submit" class="seacher-sub"><i class="iconfont icon-sousuo"></i></button>
                     <div class="seacher-word" style="display : block">
                         <a href="">小米8</a>
                         <a href="">小米MIX 2S</a>
@@ -430,10 +431,10 @@
                     <h2>家电</h2>
                     <div class="ph_right">
                         <ul class="clearfix">
-                            <li><a href = "#" class = "active_title">热门</a></li>
-                            <li><a href = "#">电视影音</a></li>
-                            <li><a href = "#">电脑</a></li>
-                            <li><a href = "#">家居</a></li>
+                            <li><a href="#" class="active_title">热门</a></li>
+                            <li><a href="#">电视影音</a></li>
+                            <li><a href="#">电脑</a></li>
+                            <li><a href="#">家居</a></li>
                         </ul>
                     </div>
                 </div>
@@ -1112,12 +1113,6 @@
 
                     </div>
                 </div>
-
-
-
-
-
-
             </div>
 
             <!-- 争做优等生 -->
@@ -1127,63 +1122,737 @@
                 </a>
             </div>
 
+            <!-- 智能 -->
+            <div id="smart">
+                <div class="smart_header">
+                    <h2>智能</h2>
+                    <div class="ph2_right">
+                        <ul class="clearfix">
+                            <li><a href="#" class="active_title">热门</a></li>
+                            <li><a href="#">健康</a></li>
+                            <li><a href="#">酷玩</a></li>
+                            <li><a href="#">路由器</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="smart_info clearfix">
+                    <div class="smart_info_left">
+                        <div class="info_left_box">
+                            <ul class="clearfix">
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <img src="images/camer.jpg" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <img src="images/ele.car.jpg" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="smart_info_right">
+
+                        <!-- <ul class="ul_list clearfix active">
+                           
+                        </ul> -->
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- 小米笔记本 -->
+            <div id="notebook">
+                <a href="#" target="_blank">
+                    <img src="images/notebook.jpg" />
+                </a>
+            </div>
+
+            <!-- 搭配 -->
+            <div id="match">
+                <div class="match_header">
+                    <h2>搭配</h2>
+                    <div class="ph3_right">
+                        <ul class="clearfix">
+                            <li><a href="#" class="active_title">热门</a></li>
+                            <li><a href="#">耳机音响</a></li>
+                            <li><a href="#">电源</a></li>
+                            <li><a href="#">电池存储卡</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="match_info clearfix">
+                    <div class="match_info_left">
+                        <div class="info_left_box">
+                            <ul class="clearfix">
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <img src="images/9hao.jpg" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <img src="images/xiaomi_air.jpg" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="match_info_right">
+
+                        <!-- <ul class="ul_list clearfix active">
+                           
+                        </ul> -->
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- 米家电暖气 -->
+            <div id="notebook">
+                <a href="#" target="_blank">
+                    <img src="images/mijiadiannuanqi.jpg" />
+                </a>
+            </div>
+
+            <!-- 周边 -->
+            <div id="sideS">
+                <div class="sideS_header">
+                    <h2>周边</h2>
+                    <div class="ph4_right">
+                        <ul class="clearfix">
+                            <li><a href="#" class="active_title">热门</a></li>
+                            <li><a href="#">出行</a></li>
+                            <li><a href="#">居家</a></li>
+                            <li><a href="#">生活周边</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sideS_info clearfix">
+                    <div class="sideS_info_left">
+                        <div class="info_left_box">
+                            <ul class="clearfix">
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <img src="images/mijiayundongxie.jpg" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <img src="images/90fen.jpg" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sideS_info_right">
+
+                        <!-- <ul class="ul_list clearfix active">
+                           
+                        </ul> -->
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- 米兔理发器 -->
+            <div id="rabbit">
+                <a href="#" target="_blank">
+                    <img src="images/mitulidaqi.jpg" />
+                </a>
+            </div>
+
+            <!-- 为你推荐 -->
+            <div id="show_pro">
+                <div class="show_pro_header">
+                    <h2>为你推荐</h2>
+                </div>
+                <div class="show_pro_info">
+                    <ul class="clearfix">
+                        <li>
+                            <a href="#">
+                                <img src="images/dt1.jpeg" />
+                            </a>
+                            <p class="show_pro_rev"> 最生活浴巾•Air（1条装） </p>
+                            <p class="show_pro_price">33元</p>
+                            <p class="show_pro_good"> 200人好评 </p>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <img src="images/pms666.jpg" />
+                            </a>
+                            <p class="show_pro_rev"> 最生活浴巾•Air（1条装） </p>
+                            <p class="show_pro_price">33元</p>
+                            <p class="show_pro_good"> 200人好评 </p>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <img src="images/scale.jpg" />
+                            </a>
+                            <p class="show_pro_rev"> 最生活浴巾•Air（1条装） </p>
+                            <p class="show_pro_price">33元</p>
+                            <p class="show_pro_good"> 200人好评 </p>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <img src="images/shafa.80.png" />
+                            </a>
+                            <p class="show_pro_rev"> 最生活浴巾•Air（1条装） </p>
+                            <p class="show_pro_price">33元</p>
+                            <p class="show_pro_good"> 200人好评 </p>
+                        </li>
+
+                        <li class = "show_pro_last">
+                            <a href="#">
+                                <img src="images/ukelele.jpg" />
+                            </a>
+                            <p class="show_pro_rev"> 最生活浴巾•Air（1条装） </p>
+                            <p class="show_pro_price">33元</p>
+                            <p class="show_pro_good"> 200人好评 </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 热评产品 -->
+            <div id="hot_pro">
+                <div class="hot_pro_header">
+                    <h2>热评产品</h2>
+                </div>
+                <div class="hot_pro_info">
+                    <ul class="clearfix">
+                        <li>
+                            <a href="#"><img src="images/hot1.jpg" /></a>
+                            <p class="review">外形简洁大方，大爱小米！全家人都在用小米的产品，真心不错，最主要的是性价比高。</p>
+                            <p class="author"> 来自于 酸小妞～！ 的评价 </p>
+                        </li>
+
+                        <li>
+                            <a href="#"><img src="images/hot2.jpg" /></a>
+                            <p class="review">外形简洁大方，大爱小米！全家人都在用小米的产品，真心不错，最主要的是性价比高。</p>
+                            <p class="author"> 来自于 酸小妞～！ 的评价 </p>
+                        </li>
+
+                        <li>
+                            <a href="#"><img src="images/hot3.jpg" /></a>
+                            <p class="review">外形简洁大方，大爱小米！全家人都在用小米的产品，真心不错，最主要的是性价比高。</p>
+                            <p class="author"> 来自于 酸小妞～！ 的评价 </p>
+                        </li>
+
+                        <li>
+                            <a href="#"><img src="images/hot4.jpg" /></a>
+                            <p class="review">外形简洁大方，大爱小米！全家人都在用小米的产品，真心不错，最主要的是性价比高。</p>
+                            <p class="author"> 来自于 酸小妞～！ 的评价 </p>
+                        </li>
 
 
+                    </ul>
+                </div>
+            </div>
 
+            <!-- 小米蓝牙耳机 -->
+            <div id="xiaomiLanya">
+                <a href="#" target="_blank">
+                    <img src="images/xiaomilanyaerji.jpg" />
+                </a>
+            </div>
 
+            <!-- 内容 -->
+            <div id="xiaomiConn">
+                <div class="xiaomiConn_header">
+                    <h2>内容</h2>
+                </div>
+                <div class="xiaomiConn_info">
+                    <ul class="clearfix">
+                        <li class="info_book">
+                            <p>图书</p>
+                            <div class="info_wrapper">
+                                <div class="swiper-container_h">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a href="#">
+                                                <h4 class="swiper-slide_title">哈利·波特与被诅咒的孩子</h4>
+                                            </a>
+                                            <a href="#">
+                                                <p class="swiper-slide_des">“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！ </p>
+                                            </a>
+                                            <p class="swiper-slide_price">29.37元</p>
+                                            <a href="#">
+                                                <img src="images/book1.png" />
+                                            </a>
+                                        </div>
+                                        </a>
+                                        <div class="swiper-slide">
+                                            <a href="#">
+                                                <h4 class="swiper-slide_title">畅销作家大冰</h4>
+                                            </a>
+                                            <a href="#">
+                                                <p class="swiper-slide_des">畅销作家大冰2016年新书！讲给你听，好吗好的！ </p>
+                                            </a>
+                                            <p class="swiper-slide_price">29.37元</p>
+                                            <a href="#">
+                                                <img src="images/book.png" />
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#">
+                                                <h4 class="swiper-slide_title">海量好书</h4>
+                                            </a>
+                                            <a href="#">
+                                                <p class="swiper-slide_des">海量好书，享受精品阅读时光。漂亮的中文排版，千万读者选择！ </p>
+                                            </a>
+                                            <p class="swiper-slide_price">29.37元</p>
+                                            <a href="#">
+                                                <img src="images/book3.jpg" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </li>
 
+                        <li class="info_mainTitle">
+                            <p>MIUI主题</p>
+                            <div class="info_wrapper">
+                                <div class="swiper-container_h">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a href="#">
+                                                <h4 class="swiper-slide_title">哈利·波特与被诅咒的孩子</h4>
+                                            </a>
+                                            <a href="#">
+                                                <p class="swiper-slide_des">“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！ </p>
+                                            </a>
+                                            <p class="swiper-slide_price">29.37元</p>
+                                            <a href="#">
+                                                <img src="images/MIUI.png" />
+                                            </a>
+                                        </div>
+                                        </a>
+                                        <div class="swiper-slide">
+                                            <a href="#">
+                                                <h4 class="swiper-slide_title">畅销作家大冰</h4>
+                                            </a>
+                                            <a href="#">
+                                                <p class="swiper-slide_des">畅销作家大冰2016年新书！讲给你听，好吗好的！ </p>
+                                            </a>
+                                            <p class="swiper-slide_price">29.37元</p>
+                                            <a href="#">
+                                                <img src="images/book.png" />
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#">
+                                                <h4 class="swiper-slide_title">海量好书</h4>
+                                            </a>
+                                            <a href="#">
+                                                <p class="swiper-slide_des">海量好书，享受精品阅读时光。漂亮的中文排版，千万读者选择！ </p>
+                                            </a>
+                                            <p class="swiper-slide_price">29.37元</p>
+                                            <a href="#">
+                                                <img src="images/book3.jpg" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="info_games">
+                            <p>游戏</p>
+                            <div class="info_wrapper">
+                                <div class="swiper-container_h">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a href="#">
+                                                <h4 class="swiper-slide_title">哈利·波特与被诅咒的孩子</h4>
+                                            </a>
+                                            <a href="#">
+                                                <p class="swiper-slide_des">“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！ </p>
+                                            </a>
+                                            <p class="swiper-slide_price">29.37元</p>
+                                            <a href="#">
+                                                <img src="images/games.png" />
+                                            </a>
+                                        </div>
+                                        </a>
+                                        <div class="swiper-slide">
+                                            <a href="#">
+                                                <h4 class="swiper-slide_title">畅销作家大冰</h4>
+                                            </a>
+                                            <a href="#">
+                                                <p class="swiper-slide_des">畅销作家大冰2016年新书！讲给你听，好吗好的！ </p>
+                                            </a>
+                                            <p class="swiper-slide_price">29.37元</p>
+                                            <a href="#">
+                                                <img src="images/book.png" />
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#">
+                                                <h4 class="swiper-slide_title">海量好书</h4>
+                                            </a>
+                                            <a href="#">
+                                                <p class="swiper-slide_des">海量好书，享受精品阅读时光。漂亮的中文排版，千万读者选择！ </p>
+                                            </a>
+                                            <p class="swiper-slide_price">29.37元</p>
+                                            <a href="#">
+                                                <img src="images/book3.jpg" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="info_app">
+                            <p>应用</p>
+                            <div class="info_wrapper">
+                                <div class="swiper-container_h">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a href="#">
+                                                <h4 class="swiper-slide_title">哈利·波特与被诅咒的孩子</h4>
+                                            </a>
+                                            <a href="#">
+                                                <p class="swiper-slide_des">“哈利·波特”第八个故事中文版震撼来袭！特别彩排版剧本！ </p>
+                                            </a>
+                                            <p class="swiper-slide_price">29.37元</p>
+                                            <a href="#">
+                                                <img src="images/app_5.png" />
+                                            </a>
+                                        </div>
+                                        </a>
+                                        <div class="swiper-slide">
+                                            <a href="#">
+                                                <h4 class="swiper-slide_title">畅销作家大冰</h4>
+                                            </a>
+                                            <a href="#">
+                                                <p class="swiper-slide_des">畅销作家大冰2016年新书！讲给你听，好吗好的！ </p>
+                                            </a>
+                                            <p class="swiper-slide_price">29.37元</p>
+                                            <a href="#">
+                                                <img src="images/book.png" />
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#">
+                                                <h4 class="swiper-slide_title">海量好书</h4>
+                                            </a>
+                                            <a href="#">
+                                                <p class="swiper-slide_des">海量好书，享受精品阅读时光。漂亮的中文排版，千万读者选择！ </p>
+                                            </a>
+                                            <p class="swiper-slide_price">29.37元</p>
+                                            <a href="#">
+                                                <img src="images/book3.jpg" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
         </div>
     </div>
 
+    <!-- 页面底部 -->
+    <div class="site-footer">
+        <div class="container">
+            <div class="footer-service">
+                <ul class="list-service clearfix">
+                    <li>
+                        <a href="">
+                            <i class=""></i> 预约维修服务
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class=""></i> 7天无理由退货
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class=""></i> 15天免费换货
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class=""></i> 满150元包邮
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class=""></i> 520余家售后网点
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-links clearfix">
+                <dl class="col-links col-links-first">
+                    <dt>帮助中心</dt>
+                    <dd>
+                        <a href="">账户管理</a>
+                    </dd>
+                    <dd>
+                        <a href="">购物指南</a>
+                    </dd>
+                    <dd>
+                        <a href="">订单操作</a>
+                    </dd>
+                </dl>
+                <dl class="col-links col-links-first">
+                    <dt>服务支持</dt>
+                    <dd>
+                        <a href="">售后政策</a>
+                    </dd>
+                    <dd>
+                        <a href="">购物指南</a>
+                    </dd>
+                    <dd>
+                        <a href="">订单操作</a>
+                    </dd>
+                </dl>
+                <dl class="col-links col-links-first">
+                    <dt>线下门店</dt>
+                    <dd>
+                        <a href="">账户管理</a>
+                    </dd>
+                    <dd>
+                        <a href="">购物指南</a>
+                    </dd>
+                    <dd>
+                        <a href="">订单操作</a>
+                    </dd>
+                </dl>
+                <dl class="col-links col-links-first">
+                    <dt>关于小米</dt>
+                    <dd>
+                        <a href="">账户管理</a>
+                    </dd>
+                    <dd>
+                        <a href="">购物指南</a>
+                    </dd>
+                    <dd>
+                        <a href="">订单操作</a>
+                    </dd>
+                </dl>
+                <dl class="col-links col-links-first">
+                    <dt>关注我们</dt>
+                    <dd>
+                        <a href="">账户管理</a>
+                    </dd>
+                    <dd>
+                        <a href="">购物指南</a>
+                    </dd>
+                    <dd>
+                        <a href="">订单操作</a>
+                    </dd>
+                </dl>
+                <dl class="col-links col-links-first">
+                    <dt>特色服务</dt>
+                    <dd>
+                        <a href="">账户管理</a>
+                    </dd>
+                    <dd>
+                        <a href="">购物指南</a>
+                    </dd>
+                    <dd>
+                        <a href="">订单操作</a>
+                    </dd>
+                </dl>
+                <div class="col-contact">
+                    <p class="phone">400-100-5678</p>
+                    <p>
+                        周一至周日 8:00-18:00<br> （仅收市话费）
+                    </p>
+                    <a href="javascript:;" class="btn-service">
+                        <i class="iconfont"></i> 联系客服
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="site-info">
+        <div class="container">
+            <div class="logo"></div>
+            <div class="info-text">
+                <p class="sites">
+                    <a href="">
+                        小米商城
+                    </a>
+                    <span class="sep">|</span>
+                    <a href="">
+                        MIUI
+                    </a>
+                    <span class="sep">|</span>
+                    <a href="">
+                        米家
+                    </a>
+                    <span class="sep">|</span>
+                    <a href="">
+                        米聊
+                    </a>
+                    <span class="sep">|</span>
+                    <a href="">
+                        多看
+                    </a>
+                    <span class="sep">|</span>
+                    <a href="">
+                        游戏
+                    </a>
+                    <span class="sep">|</span>
+                    <a href="">
+                        路由器
+                    </a>
+                    <span class="sep">|</span>
+                    <a href="">
+                        米粉卡
+                    </a>
+                    <span class="sep">|</span>
+                    <a href="">
+                        政企服务
+                    </a>
+                    <span class="sep">|</span>
+                    <a href="">
+                        小米天猫店
+                    </a>
+                    <span class="sep">|</span>
+                    <a href="">
+                        隐私政策
+                    </a>
+                    <span class="sep">|</span>
+                    <a href="">
+                        商城用户协议
+                    </a>
+                    <span class="sep">|</span>
+                    <a href="">
+                        账号协议
+                    </a>
+                    <span class="sep">|</span>
+                    <a href="">
+                        问题反馈
+                    </a>
+                    <span class="sep">|</span>
+                    <a href="">
+                        廉正举报
+                    </a>
+                    <span class="sep">|</span>
+                    <a href="">
+                        诚信合规
+                    </a>
+                    <span class="sep">|</span>
+                    <a href="">
+                        Select Region
+                    </a>
+                </p>
+                <p>
+                    &copy;
+                    <a href="" target="_blank" title="mi.com">mi.com</a> 京ICP证110507号
+                    <a href="" target="_blank">
+                        京ICP备10046444号
+                    </a>
+                    <a href="" target="_blank">
+                        京公网安备11010802020134号
+                    </a>
+                    <a href="" target="_blank">京网文[2017]1530-131号</a><br>
+                    <a href="" target="_blank">（京）网械平台备字（2018）第00005号</a>
+                    <a href="" target="_blank">互联网药品信息服务资格证 (京) -非经营性-2014-0090 </a>
+                    <a href="" target="_blank">营业执照 医疗器械公告</a><br>
+                    <a href="" target="_blank">增值电信业务许可证 </a> 网络食品经营备案（京）【2018】WLSPJYBAHF-12
+                    <a href="" target="_blank">食品经营许可证</a><br> 违法和不良信息举报电话：185-0130-1238
+                    <a href="" target="_blank">知识产权侵权投诉 </a> 本网站所列数据，除特殊说明，所有数据均出自我司实验室测试
 
-
-
-
-
-
-
-
-
-    <script src="js/move.js"></script>
-    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.header-nav .show').hover(function () {
-                $(".header-nav-mean").show();
-            }, function () {
-                $(".header-nav-mean").hide();
-            });
-
-            $(".header-nav-mean").hover(function () {
-                $(this).show();
-            }, function () {
-                $(this).hide();
-            });
-        })
-
-    </script>
-    <script src="js/sendJsonp.js"></script>
-    <script src="js/seacherXiaomi.js"></script>
-    <script>
-        xiaomi.init()
-        nav.init()
-        bannerSwiper.init()
-        bannerNav.init()
-        electric.init()
-
-    </script>
-
-
-
-
-
-
-
-
-
-
-
+                </p>
+            </div>
+            <div class="info-links">
+                <a href="" target="_blank">
+                    <img src="images/truste.png" alt="TRUSTe Privacy Certification">
+                </a>
+                <a href="" target="_blank">
+                    <img src="images/v-logo-2.png" alt="TRUSTe Privacy Certification">
+                </a>
+                <a href="" target="_blank">
+                    <img src="images/v-logo-1.png" alt="TRUSTe Privacy Certification">
+                </a>
+                <a href="" target="_blank">
+                    <img src="images/v-logo-3.png" alt="TRUSTe Privacy Certification">
+                </a>
+                <a href="" target="_blank">
+                    <img src="images/ba10428a4f9495ac310fd0b5e0cf8370.png" alt="TRUSTe Privacy Certification">
+                </a>
+            </div>
+        </div>
+        <div class="slogan ir">
+            探索黑科技，小米为发烧而生
+        </div>
+    </div>
 </body>
 
 </html>
+
+
+<script src="swiper-4.4.6/dist/js/swiper.min.js"></script>
+<script src="js/move.js"></script>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.header-nav .show').hover(function () {
+            $(".header-nav-mean").show();
+        }, function () {
+            $(".header-nav-mean").hide();
+        });
+
+        $(".header-nav-mean").hover(function () {
+            $(this).show();
+        }, function () {
+            $(this).hide();
+        });
+    })
+
+    var swiper = new Swiper('.swiper-container_h', {
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+
+        },
+    });
+
+</script>
+
+<script src="js/sendJsonp.js"></script>
+<script src="js/seacherXiaomi.js"></script>
+<script>
+    xiaomi.init()
+    nav.init()
+    bannerSwiper.init()
+    bannerNav.init()
+    electric.init()
+    smart.init()
+    match.init()
+    sideS.init()
+    searchXiaomiDetail.init()
+</script>

@@ -2,9 +2,8 @@ var xiaomi = (function () {
     var $inp = document.querySelector('.seacher-txt');
     var $keywordslist = document.querySelector('.keywordslist');
     var $keyWords = document.querySelector('.seacher-word');
-    var $seacherTxt = document.querySelector('.seacher-txt');
+    //var $seacherTxt = document.querySelector('.seacher-txt');
     var $seacherSub = document.querySelector('.seacher-sub');
-    console.log($keywordslist)
     return {
         init() {
             this.event();
@@ -12,11 +11,12 @@ var xiaomi = (function () {
         event() {
             var _this = this;
             $inp.onfocus = function () {
+                this.oninput()
                 var val = this.value;
                 if (val == '') {
                     _this.show()
                 } else {
-                    $seacherTxt.classList.add('txt-border');
+                    $inp.classList.add('txt-border');
                     $seacherSub.classList.add('sub-border');
                 }
             }
@@ -26,30 +26,32 @@ var xiaomi = (function () {
                     _this.show()
                 } else {
                     $keywordslist.style.display = 'block';
-                    $seacherTxt.classList.add('txt-border');
+                     $inp.classList.add('txt-border');
                     $seacherSub.classList.add('sub-border');
-                    _this.getJson(val);
+                     _this.getJson(val);
+
                 }
             }
             $inp.onblur = function () {
-                _this.hidden()
+                    _this.hidden()
             }
-            $keywordslist.onclick = function (e) {
-                console.log('click');
-                e = e || window.event;
-                // 获取目标元素
-                var target = e.target || e.srcElement;
-                if (target.nodeName === 'LI') {
-                    console.log(1);
-                    var text = target.innerHTML;
-                    $inp.value = text;
-                }
-            }
+            // $keywordslist.onclick = function (e) {
+            //     e = e || window.event;
+            //     // 获取目标元素
+            //     var target = e.target || e.srcElement;
+            //     if (target.nodeName === 'LI') {
+            //         var text = target.innerHTML;
+            //         $inp.value = text;
+            //     }
+            // }
+            $("#project").on("click", "li", function(){
+                $(".seacher-txt").val($(this).children().text());
+        });
         },
         show() {
             $keywordslist.style.display = 'block';
             $keywordslist.innerHTML = `
-            <ul>
+            <ul id = "project">
                             <li><a href="#">小米6x<span>约有6件</span></a></li>
                             <li><a href="#">小米MIX 2S<span>约有5件</span></a></li>
                             <li><a href="#">黑鲨游戏手机<span>约有3件</span></a></li>
@@ -62,13 +64,13 @@ var xiaomi = (function () {
                             <li><a href="#">净水器<span>约有8件</span></a></li>
                         </ul>`
             $keyWords.style.display = 'none';
-            $seacherTxt.classList.add('txt-border');
+             $inp.classList.add('txt-border');
             $seacherSub.classList.add('sub-border');
         },
         hidden() {
             $keywordslist.style.display = 'none';
             $keyWords.style.display = 'block';
-            $seacherTxt.classList.remove('txt-border');
+             $inp.classList.remove('txt-border');
             $seacherSub.classList.remove('sub-border');
         },
         getJson(val) {
@@ -79,7 +81,6 @@ var xiaomi = (function () {
             })
         },
         insertData(data) {
-            console.log(data);
             $keywordslist.innerHTML = '';
             var $ul = document.createElement('ul')
             for (i in data) {
@@ -308,6 +309,7 @@ var bannerNav = (function () {
     }
 }())
 
+
 var electric = (function () {
     var num = 0;
     return {
@@ -317,9 +319,8 @@ var electric = (function () {
         },
         event() {
             const _this = this;
-            $(".ph_right ul li").on("mouseenter",function(){
+            $(".ph_right ul li").on("mouseenter", function () {
                 num = $(this).index();
-            
                 $(".electric_info_right ul").eq(num).addClass("active").siblings().removeClass("active");
                 $(this).children().addClass("active_title").parent().siblings().children().removeClass("active_title");
                 _this.getJson()
@@ -327,21 +328,16 @@ var electric = (function () {
         },
         getJson() {
             const _this = this;
-            $.getJSON('json/data3.json',function(data){
+            $.getJSON('json/data3.json', function (data) {
                 _this.insertData(data);
             })
         },
         insertData(data) {
             $(".electric_info_right").empty();
-             console.log(data.data[num].main[0].list)
-             var $ul = $(`<ul class="ul_list"></ul>`);
-             console.log(num)
-            for(attr in data.data[num].main[0].list){
-                
+            var $ul = $(`<ul class="ul_list"></ul>`);
+            for (attr in data.data[num].main[0].list) {
                 var content = data.data[num].main[0].list[attr];
-                //console.log(data.data[num].main[0].list[attr])
-               
-                    var $li = (`
+                var $li = (`
                     <li>
                         <div class="pic">
                             <a href="#" target="_blank">
@@ -359,17 +355,209 @@ var electric = (function () {
                         <div class="pic_flag">${content.pic_flag}</div>
                         <a class="hide_info" href="#" target="_blank">
                             <span class="hide_info_a">${content.hide_info_a}</span>
-                            <p id="hide_info__b"> ${content.hide_info_b} </p>
+                            <p id="hide_info__b"> ${content.hide_info__b} </p>
                         </a>
                     </li>
                     `)
-                    $ul.append($li);
-                
-               
+                $ul.append($li);
+
+
             }
             $('.electric_info_right').append($ul);
         }
-        
+
     }
-    
+
+}())
+
+
+var smart = (function () {
+    var num = 0;
+    return {
+        init() {
+            this.getJson();
+            this.event();
+        },
+        event() {
+            const _this = this;
+            $(".ph2_right ul li").on("mouseenter", function () {
+                num = $(this).index();
+                $(".smart_info_right ul").eq(num).addClass("active").siblings().removeClass("active");
+                $(this).children().addClass("active_title").parent().siblings().children().removeClass("active_title");
+                _this.getJson()
+            })
+        },
+        getJson() {
+            const _this = this;
+            $.getJSON('json/data4.json', function (data) {
+                _this.insertData(data);
+            })
+        },
+        insertData(data) {
+            $(".smart_info_right").empty();
+            var $ul = $(`<ul class="ul_list"></ul>`);
+            for (attr in data.data[num].main[0].list) {
+                var content = data.data[num].main[0].list[attr];
+                var $li = (`
+                    <li>
+                        <div class="pic">
+                            <a href="#" target="_blank">
+                                <img src="${content.src}" />
+                            </a>
+                        </div>
+                        <a href="#" target="_blank">
+                            <p class="pic_title">${content.pic_title}</p>
+                        </a>
+                        <p class="pic_detail">${content.pic_detail}</p>
+                        <p class="pic_price">
+                            <span class="pic_price_a">${content.pic_price_a}</span>
+                            <span class="pic_price_b">${content.pic_price_b}</span>
+                        </p>
+                        <div class="pic_flag">${content.pic_flag}</div>
+                        <a class="hide_info" href="#" target="_blank">
+                            <span class="hide_info_a">${content.hide_info_a}</span>
+                            <p id="hide_info__b"> ${content.hide_info__b} </p>
+                        </a>
+                    </li>
+                    `)
+                $ul.append($li);
+            }
+            $('.smart_info_right').append($ul);
+        }
+
+    }
+
+}())
+
+
+var match = (function () {
+    var num = 0;
+    return {
+        init() {
+            this.getJson();
+            this.event();
+        },
+        event() {
+            const _this = this;
+            $(".ph3_right ul li").on("mouseenter", function () {
+                num = $(this).index();
+                $(".match_info_right ul").eq(num).addClass("active").siblings().removeClass("active");
+                $(this).children().addClass("active_title").parent().siblings().children().removeClass("active_title");
+                _this.getJson()
+            })
+        },
+        getJson() {
+            const _this = this;
+            $.getJSON('json/data5.json', function (data) {
+                _this.insertData(data);
+            })
+        },
+        insertData(data) {
+            $(".match_info_right").empty();
+            var $ul = $(`<ul class="ul_list"></ul>`);
+            for (attr in data.data[num].main[0].list) {
+                var content = data.data[num].main[0].list[attr];
+                var $li = (`
+                    <li>
+                        <div class="pic">
+                            <a href="#" target="_blank">
+                                <img src="${content.src}" />
+                            </a>
+                        </div>
+                        <a href="#" target="_blank">
+                            <p class="pic_title">${content.pic_title}</p>
+                        </a>
+                        <p class="pic_detail">${content.pic_detail}</p>
+                        <p class="pic_price">
+                            <span class="pic_price_a">${content.pic_price_a}</span>
+                            <span class="pic_price_b">${content.pic_price_b}</span>
+                        </p>
+                        <div class="pic_flag">${content.pic_flag}</div>
+                        <a class="hide_info" href="#" target="_blank">
+                            <span class="hide_info_a">${content.hide_info_a}</span>
+                            <p id="hide_info__b"> ${content.hide_info__b} </p>
+                        </a>
+                    </li>
+                    `)
+                $ul.append($li);
+            }
+            $('.match_info_right').append($ul);
+        }
+
+    }
+
+}())
+
+
+var sideS = (function () {
+    var num = 0;
+    return {
+        init() {
+            this.getJson();
+            this.event();
+        },
+        event() {
+            const _this = this;
+            $(".ph4_right ul li").on("mouseenter", function () {
+                num = $(this).index();
+                $(".sideS_info_right ul").eq(num).addClass("active").siblings().removeClass("active");
+                $(this).children().addClass("active_title").parent().siblings().children().removeClass("active_title");
+                _this.getJson()
+            })
+        },
+        getJson() {
+            const _this = this;
+            $.getJSON('json/data6.json', function (data) {
+                _this.insertData(data);
+            })
+        },
+        insertData(data) {
+            $(".sideS_info_right").empty();
+            var $ul = $(`<ul class="ul_list"></ul>`);
+            for (attr in data.data[num].main[0].list) {
+                var content = data.data[num].main[0].list[attr];
+                var $li = (`
+                    <li>
+                        <div class="pic">
+                            <a href="#" target="_blank">
+                                <img src="${content.src}" />
+                            </a>
+                        </div>
+                        <a href="#" target="_blank">
+                            <p class="pic_title">${content.pic_title}</p>
+                        </a>
+                        <p class="pic_detail">${content.pic_detail}</p>
+                        <p class="pic_price">
+                            <span class="pic_price_a">${content.pic_price_a}</span>
+                            <span class="pic_price_b">${content.pic_price_b}</span>
+                        </p>
+                        <div class="pic_flag">${content.pic_flag}</div>
+                        <a class="hide_info" href="#" target="_blank">
+                            <span class="hide_info_a">${content.hide_info_a}</span>
+                            <p id="hide_info__b"> ${content.hide_info__b} </p>
+                        </a>
+                    </li>
+                    `)
+                $ul.append($li);
+            }
+            $('.sideS_info_right').append($ul);
+        }
+
+    }
+
+}())
+
+
+var searchXiaomiDetail = (function () {
+    var $btn = document.querySelector("#sub");
+    return {
+        init() {
+            this.event()
+        },
+        event() {
+            $btn.onclick = function () {
+                location.href = 'xm-product.html';
+            }
+        }
+    }
 }())
