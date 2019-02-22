@@ -1,3 +1,24 @@
+.nav-title {
+    display: block;
+    padding: 38px 0 38px;
+    text-align: right;
+    color: #333;
+    font-size: 16px;
+}
+
+.banner-nav .banner-nav-mean {
+    border: 1px solid #ff6700;
+}
+
+.banner-nav .banner-nav-mean .mean-title {
+    background-color: #fff;
+    color: #000;
+}
+
+.banner-nav .banner-nav-mean .mean-title a {
+    color: #000;
+}
+
 .breadcrumbs {
     height: 40px;
     font-size: 12px;
@@ -48,6 +69,48 @@
     cursor: pointer;
     color: #ff6700;
     margin: 15px 0;
+    position: relative;
+}
+
+.lor {
+    display: block;
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-right: 18px;
+    border: 1px solid #b0b0b0;
+    border-radius: 15px;
+}
+
+
+/* .lor {
+    border-color: #ff6700;
+} */
+
+.current:after {
+    position: absolute;
+    top: 5px;
+    left: 7px;
+    display: inline-block;
+    content: "";
+    width: 7px;
+    height: 7px;
+    border: solid #999;
+    border-width: 1px 1px 0 0;
+    transform: rotate(135deg);
+}
+
+.cut:after {
+    position: absolute;
+    top: 8px;
+    left: 7px;
+    display: none;
+    content: "";
+    width: 7px;
+    height: 7px;
+    border: solid #ff6700;
+    border-width: 0 0 1px 1px;
+    transform: rotate(135deg);
 }
 
 
@@ -61,13 +124,6 @@
     width: 70px;
     height: 70px;
     margin: 0 auto 24px;
-}
-
-.iconxiala-yuan {
-    font-size: 20px;
-    margin-right: 18px;
-    color: #b0b0b0;
-    line-height: 20px;
 }
 
 .box-bd,

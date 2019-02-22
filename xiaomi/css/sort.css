@@ -1,3 +1,24 @@
+.nav-title {
+    display: block;
+    padding: 38px 0 38px;
+    text-align: right;
+    color: #333;
+    font-size: 16px;
+}
+
+.banner-nav .banner-nav-mean {
+    border: 1px solid #ff6700;
+}
+
+.banner-nav .banner-nav-mean .mean-title {
+    background-color: #fff;
+    color: #000;
+}
+
+.banner-nav .banner-nav-mean .mean-title a {
+    color: #000;
+}
+
 .breadcrumbs {
     height: 40px;
     font-size: 12px;
@@ -334,6 +355,20 @@
 
 .goods-item .flags .flag-gift {
     background-color: #2196f3;
+}
+
+.goods-item .flag-true {
+    position: absolute;
+    top: 10px;
+    left: 8px;
+    width: 280px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, .2);
+    line-height: 40px;
+    color: #fff;
+    font-size: 16px;
+    z-index: 15;
+    display: none;
 }
 
 .goods-item .notice {

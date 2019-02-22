@@ -1,9 +1,36 @@
+.nav-title {
+    display: block;
+    padding: 38px 0 38px;
+    text-align: right;
+    color: #333;
+    font-size: 16px;
+}
+
+.banner-nav .banner-nav-mean {
+    border: 1px solid #ff6700;
+}
+
+.banner-nav .banner-nav-mean .mean-title {
+    background-color: #fff;
+    color: #000;
+}
+
+.banner-nav .banner-nav-mean .mean-title a {
+    color: #000;
+}
+
 #product_wrapper {
-    position: relative;
+    width: 100%;
     background: #fff;
     border-top: 1px solid #e0e0e0;
     border-bottom: 1px solid #e0e0e0;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.07);
+    z-index: 20;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
 }
 
 .container {
@@ -97,6 +124,12 @@
     line-height: 28px;
 }
 
+.right a.btn:hover {
+    color: #fff;
+    background-color: #f25807;
+    border-color: #f25807;
+}
+
 .mi8-index {
     min-width: 1226px;
 }
@@ -134,21 +167,16 @@
     top: 0;
     color: #111;
     width: 100%;
-    z-index: 10;
+    z-index: 5;
     padding-top: 72px;
 }
-
-
-/* .section-index .txt2 {
-    color: #111;
-} */
 
 .section .txt img {
     width: 132px;
     height: 43px;
     display: block;
     margin: 0 auto 12px;
-    /* transition-delay: .5s; */
+    transition-delay: .5s;
 }
 
 .section-index h2 {
@@ -195,15 +223,6 @@
     width: 100%;
     height: 785px;
 }
-
-
-/* .section-index ul li {
-    float: none;
-    list-style: outside none none;
-    position: absolute;
-    width: 1423px;
-    display: block;
-} */
 
 .mi8-index .section i {
     font-style: normal;
@@ -263,8 +282,8 @@
 
 .section .move {
     opacity: 1;
-    /* transform: translate3d(0, 0, 0);
-    transition-delay: .5s; */
+    transform: translate3d(0, 0, 0);
+    transition-delay: .5s;
 }
 
 .section-border {
@@ -719,4 +738,110 @@
     width: 336px;
     height: 50.5px;
     margin: 42px auto;
+}
+
+.section-aibeauty .fr {
+    float: right;
+    background: url(../images/aibeauty.jpg) 50% 0 no-repeat;
+    background-size: cover;
+    font-size: 6px;
+    text-align: center;
+}
+
+.section-aibeauty .tips {
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    font-size: 3px !important;
+    color: #9b9b9b;
+}
+
+.section-cpu {
+    height: 763px;
+    color: #fff;
+    background: url(../images/cpu.jpg) 50% 0 no-repeat;
+    background-size: cover;
+}
+
+.section-cpu p {
+    color: #fff;
+}
+
+.section-infrared {
+    height: 766px;
+    background: url(../images/infrared.jpg) 50% 0 no-repeat;
+    background-size: cover;
+}
+
+.section-infrared p {
+    font-size: 20px;
+}
+
+.section-xiaomi {
+    margin-top: 43px;
+}
+
+.section-xiaomi .item-xiaomi {
+    width: 706px;
+    height: 412px;
+    background: url(../images/xiaoai1.jpg) 50% 0 no-repeat;
+    background-size: cover;
+    float: left;
+    position: relative;
+    text-align: center;
+}
+
+.section-xiaomi .item-xiaoai {
+    float: right;
+    width: 706px;
+    height: 412px;
+    color: #111;
+    background: #fff;
+    position: relative;
+    text-align: center;
+}
+
+.section-xiaomi .item-xiaoai h3 {
+    font-size: 28px;
+    padding-top: 145px;
+}
+
+.section-xiaomi .item-xiaoai p {
+    font-size: 17px;
+    margin-top: 20px;
+}
+
+.section-nfc {
+    margin-bottom: 43px;
+    margin-top: 11px;
+}
+
+.section-nfc .item-xiaomi {
+    float: left;
+    width: 706px;
+    height: 412px;
+    color: #111;
+    background: #fff;
+    position: relative;
+    text-align: center;
+}
+
+.section-nfc .item-xiaomi h3 {
+    font-size: 28px;
+    padding-top: 145px;
+}
+
+.section-nfc .item-xiaomi p {
+    font-size: 17px;
+    margin-top: 20px;
+}
+
+.section-nfc .item-xiaoai {
+    width: 706px;
+    height: 412px;
+    background: url(../images/nfc.jpg) 50% 0 no-repeat;
+    background-size: cover;
+    float: right;
+    position: relative;
+    text-align: center;
 }
